@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Transit Heatmaps</title>
+  <meta charset="UTF-8" />
+  <script src="https://kit.fontawesome.com/895917e848.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+
+
+
+  <!-- HTML Meta Tags -->
+  <title>Transit Heatmaps</title>
+  <meta name="description" content="Nicer version of what ICBC publishes on Tableau">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://markedwardson.me/ICBC-Crash-Maps/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ICBC Crash Maps">
+  <meta property="og:description" content="Nicer version of what ICBC publishes on Tableau">
+  <meta property="og:image" content="https://github.com/HyperbolicStudios/ICBC-Crash-Maps/blob/main/Preview%20Image.png?raw=true">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="markedwardson.me">
+  <meta property="twitter:url" content="https://markedwardson.me/ICBC-Crash-Maps/">
+  <meta name="twitter:title" content="ICBC Crash Maps">
+  <meta name="twitter:description" content="Nicer version of what ICBC publishes on Tableau">
+  <meta name="twitter:image" content="https://github.com/HyperbolicStudios/ICBC-Crash-Maps/blob/main/Preview%20Image.png?raw=true">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+        
+        
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+
+<body>
+
+  <header id="topHeader" onclick="openNav()">
+    <div></div>
+    <h3>Transit Heatmaps</h3>
+
+    <a href="#" onclick="return openNav()" class="align-right openButton">Menu &nbsp;&#9776;</a>
+    <div></div>
+  </header>
+
+  <nav id="menu">
+    <a href="# " onclick="closeNav()">
+      <h5 class="menu-text close" id="closeButton">&times;</h5>
+    </a>
+    <a href="/">
+      <h5 class="menu-text">Home</h5>
+    </a>
+    <a href="https://github.com/HyperbolicStudios/">
+      <h5 class="menu-text">Github</h5>
+    </a>
+   <div></div>
+
+  </nav>
+  <section class="divider">
+  </section>
+
+  <h1>Transit Heatmaps</h1>
+  <h2>Heatmaps showing where transit service is most frequent.</h2>
+  
+
+  <iframe title="title" class="map" scrolling="no" seamless="seamless" src="Translink stop activity.html" height="700" width="100%"></iframe>
+  <div class="divider"></div>
+  <iframe title="title" class="map" scrolling="no" seamless="seamless" src="TTC stop activity.html" height="700" width="100%"></iframe>
+
+  <iframe title="title" class="map" scrolling="no" seamless="seamless" src="Victoria stop activity.html" height="700" width="100%"></iframe>
+  
+  <section class="container">
+
+  <p>Built using Static GTFS info from each transit agency. Brighter points correspond to stops with more activity (i.e. more routes/trips stop there).</p>
+  
+  <p>View the code on <a href="link">Github</a>.</p>
+  </section>
+  <div class="divider"></div>
+  <footer id="footer">
+
+    <a title="My Github" href="https://github.com/HyperbolicStudios/"><i class="fa-brands fa-github fa-2xl"></i></a>
+
+  </footer>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
