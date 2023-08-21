@@ -11,10 +11,11 @@ urls = {"Victoria": "http://victoria.mapstrat.com/current/google_transit.zip",
         "TTC": "http://opendata.toronto.ca/toronto.transit.commission/ttc-routes-and-schedules/OpenData_TTC_Schedules.zip",
         "Translink": "https://transitfeeds.com/p/translink-vancouver/29/latest/download",
         "Milan": "https://dati.comune.milano.it/gtfs.zip",
-        "London": "https://transitfeeds.com/p/london-transit-commission/831/latest/download"}
+        "London": "https://transitfeeds.com/p/london-transit-commission/831/latest/download",
+        "Calgary":"https://data.calgary.ca/download/npk7-z3bj/application%2Fx-zip-compressed"}
 
 #for name in urls.keys():
-for name in ["London"]:
+for name in ["Calgary"]:
     print("Downloading data for " + name + "...")
     try:
         shutil.rmtree("GTFS/"+name)

@@ -71,7 +71,7 @@ def create_heatmap(stops,title = ""):
 
 def main():
     #for each folder in GTFS
-    for name in ['London', 'Translink', 'TTC', 'Victoria']:
+    for name in ['Calgary','London', 'Translink', 'TTC', 'Victoria']:
         print(name)
         folder = "GTFS/{}/".format(name)
 
